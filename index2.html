@@ -20,7 +20,15 @@
         .d_h {
             height: 1000px;
         }
-
+        .d_ani{
+            transition: all 0.2s ease-in;
+        }
+        .d_ani:hover{
+            transform: rotate(-10deg);
+        }
+        .d_ani2:hover{
+            transform: scale(1.1,1.1);
+        }
         .d_nav {
             height: 62px;
             background: red;
@@ -28,8 +36,11 @@
         }
 
         .d_bg {
-            background: #712df9;
             border-radius: 6px;
+            border: 5px solid white;
+        }
+        .d_bg:hover{
+            border: 5px solid #AE7CCB;
         }
         .d_sub_opt{
             width: 130px;
@@ -52,66 +63,72 @@
         .d_opt:hover .d_sub_opt{
             display: block;
         }
+        .d_hov:hover{
+            color: #EAE0FE !important;  /*   */
+        }
+        .d_p1{
+            height: 800px;
+        }
 
 
     </style>
 </head>
 
 <body>
-    <div class="container-fluid p-0 d_tbdr d_h ">
+    <div class="container-fluid p-0 ">
         <div class="container-fluid d_nav">
             <nav class="container ">
                 <div class="row">
-                    <div class="col-4 d-flex d_tbdr">
-                        <div class="d_tbdr pt-2">
+                    <div class="col-4 d-flex">
+                        <div class="pt-2 d_ani2">
                             <a href="#">
-                                <img src="./img/bootstrap.png" width="50" alt="logo">
+                                <img  class="d_ani" src="./img/bootstrap.png" width="50" alt="logo">
                             </a>
                         </div>
-                        <div class="d_tbdr p-2 pt-3">
-                            <a href="#" class="text-white text-decoration-none">Docs</a>
+                        <div class="p-2 pt-3">
+                            <a href="#" class="text-white d_hov text-decoration-none">Docs</a>
                         </div>
-                        <div class="d_tbdr p-2 pt-3">
-                            <a href="#" class="text-white text-decoration-none">Examples</a>
+                        <div class="p-2 pt-3">
+                            <a href="#" class="text-white d_hov text-decoration-none">Examples</a>
                         </div>
-                        <div class="d_tbdr p-2 pt-3">
-                            <a href="#" class="text-white text-decoration-none">Icons</a>
+                        <div class="p-2 pt-3">
+                            <a href="#" class="text-white d_hov text-decoration-none">Icons</a>
                         </div>
-                        <div class="d_tbdr p-2 pt-3">
-                            <a href="#" class="text-white text-decoration-none">Themes</a>
+                        <div class="p-2 pt-3">
+                            <a href="#" class="text-white d_hov text-decoration-none">Themes</a>
                         </div>
-                        <div class="d_tbdr p-2 pt-3">
-                            <a href="#" class="text-white text-decoration-none">Blog</a>
+                        <div class="p-2 pt-3">
+                            <a href="#" class="text-white d_hov text-decoration-none">Blog</a>
                         </div>
                     </div>
-                    <div class="col-4 d_tbdr">
-                        <div class="mt-3 ms-5 me-5">
-                            <input type="email" class="form-control d_bg" id="exampleFormControlInput1"
+                    <div class="col-4">
+                        <div class="mt-2 ms-5 me-5">
+                            <input type="text" class="form-control d_bg" id="exampleFormControlInput1"
                                 placeholder="search">
                         </div>
                     </div>
-                    <div class="col-4 text-white d_tbdr position-relative d-flex justify-content-end p-0">
-                        <div class="d_tbdr d-flex bg-primary pt-3">
-                            <a href="#"><i class="fa-brands fa-github text-white pe-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter text-white pe-3"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-notch text-white pe-3"></i></a>
-                            <ul class="d_opt text-white border-start border-end ps-3 pe-3">
-                                <li><a href="#" class="text-white">v5.3<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="col-4 text-white position-relative d-flex justify-content-end p-0">
+                        <div class=" d-flex  pt-3">
+                            <a href="#"><i class="fa-brands fa-github text-white pe-3 d_hov"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter text-white pe-3 d_hov"></i></a>
+                            <a href="#"><i class="fa-solid fa-circle-notch text-white pe-3 d_hov"></i></a>
+                            <ul class="d_opt text-white border-start border-end ps-3 pe-3 ">
+                                <li><a href="#" class="text-white d_hov">v5.3<i class="fa-solid fa-chevron-down "></i></a>
                                     <ul class="d_sub_opt position-absolute">
                                         <li class="text-dark d_opt_1">v5 releases</li>
                                         <li><a href="#" class="text-dark d_opt_1">Latest (5.3.x)</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">v5.2.3</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">v5.1.3</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">v5.0.2</a></li>
-                                        <li class="text-dark d_opt_1">v5 releases</li>
+                                        <li class="text-dark d_opt_1 d_hov">v5 releases</li>
                                         <li><a href="#" class="text-dark d_opt_1">v4.6.x</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">v3.4.1</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">v2.3.2</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <ul class="d_opt border-end ps-3 pe-3">
-                                <li><a href="#" class="text-white">v5.3<i class="fa-solid fa-chevron-down text-white"></i></a>
+                            <ul class="d_opt border-end ps-3 pe-3 ">
+                                <li><a href="#" class="text-white d_hov">v5.3<i class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="d_sub_opt d_sub_sub_opt position-absolute">
                                         <li><a href="#" class="text-dark d_opt_1">Light</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">Dark</a></li>
@@ -123,6 +140,13 @@
                     </div>
                 </div>
             </nav>
+        </div>
+    </div>
+
+    <div class=" container-fluid p-0 d_p1 d_tbdr mt-5">
+            <div class="d-flex justify-content-center d_tbdr">
+            <button type="button" class="btn btn-warning">Warning</button>
+            <p class="" style="font-size: 15px; line-height: 20px;">Color mode support, expanded color palette, and more!</p>
         </div>
     </div>
 
