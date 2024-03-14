@@ -14,21 +14,22 @@
         .d_tbdr {
             border: 1px dashed #000;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        .d_h {
-            height: 1000px;
-        }
-        .d_ani{
+        .d_ani {
             transition: all 0.2s ease-in;
         }
-        .d_ani:hover{
+
+        .d_ani:hover {
             transform: rotate(-10deg);
         }
-        .d_ani2:hover{
-            transform: scale(1.1,1.1);
+
+        .d_ani2:hover {
+            transform: scale(1.1, 1.1);
         }
+
         .d_nav {
             height: 62px;
             background: red;
@@ -39,50 +40,58 @@
             border-radius: 6px;
             border: 5px solid white;
         }
-        .d_bg:hover{
+
+        .d_bg:hover {
             border: 5px solid #AE7CCB;
         }
-        .d_sub_opt{
+
+        .d_sub_opt {
             width: 130px;
             max-height: 400px;
             display: block;
             border: 1px solid black;
             border-radius: 12px;
         }
-        .d_opt, .d_sub_opt{
+
+        .d_opt,
+        .d_sub_opt {
             list-style: none;
         }
-        .d_sub_opt{
+
+        .d_sub_opt {
             display: none;
             top: 50px;
             left: 220px;
         }
-        .d_sub_sub_opt{
+
+        .d_sub_sub_opt {
             left: 300px;
         }
-        .d_opt:hover .d_sub_opt{
+
+        .d_opt:hover .d_sub_opt {
             display: block;
         }
-        .d_hov:hover{
-            color: #EAE0FE !important;  /*   */
+
+        .d_hov:hover {
+            color: #EAE0FE !important;
+            /*   */
         }
-        .d_p1{
+
+        .d_p1 {
             height: 800px;
         }
-
-
     </style>
 </head>
 
 <body>
-    <div class="container-fluid p-0 ">
+    <div class="container-fluid p-0 shadow ">
         <div class="container-fluid d_nav">
             <nav class="container ">
                 <div class="row">
                     <div class="col-4 d-flex">
                         <div class="pt-2 d_ani2">
                             <a href="#">
-                                <img  class="d_ani" src="./img/bootstrap.png" width="50" alt="logo">
+                                <img class="d_ani" src="./img/bootstrap.png" width="50" alt="logo">
                             </a>
                         </div>
                         <div class="p-2 pt-3">
@@ -113,7 +122,8 @@
                             <a href="#"><i class="fa-brands fa-twitter text-white pe-3 d_hov"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-notch text-white pe-3 d_hov"></i></a>
                             <ul class="d_opt text-white border-start border-end ps-3 pe-3 ">
-                                <li><a href="#" class="text-white d_hov">v5.3<i class="fa-solid fa-chevron-down "></i></a>
+                                <li><a href="#" class="text-white d_hov">v5.3<i
+                                            class="fa-solid fa-chevron-down "></i></a>
                                     <ul class="d_sub_opt position-absolute">
                                         <li class="text-dark d_opt_1">v5 releases</li>
                                         <li><a href="#" class="text-dark d_opt_1">Latest (5.3.x)</a></li>
@@ -128,7 +138,8 @@
                                 </li>
                             </ul>
                             <ul class="d_opt border-end ps-3 pe-3 ">
-                                <li><a href="#" class="text-white d_hov">v5.3<i class="fa-solid fa-chevron-down"></i></a>
+                                <li><a href="#" class="text-white d_hov">v5.3<i
+                                            class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="d_sub_opt d_sub_sub_opt position-absolute">
                                         <li><a href="#" class="text-dark d_opt_1">Light</a></li>
                                         <li><a href="#" class="text-dark d_opt_1">Dark</a></li>
@@ -143,14 +154,47 @@
         </div>
     </div>
 
-    <div class=" container-fluid p-0 d_p1 d_tbdr mt-5">
-            <div class="d-flex justify-content-center d_tbdr">
-            <button type="button" class="btn btn-warning">Warning</button>
-            <p class="" style="font-size: 15px; line-height: 20px;">Color mode support, expanded color palette, and more!</p>
+    <div class=" container mt-5 d_p1">
+        <div class="" style="margin-left: 212px; margin-right: 212px;">
+            <div class="d-flex justify-content-center">
+                <a href="#"><span class="d-flex p-2 rounded-2 bg-warning text-dark fw-bold shadow-sm">New in v5.3</span></a>
+                <a href="#"><span class="d-flex mt-2 ms-2 text-dark">Color mode support, expanded color palette, and
+                        more!</span></a>
+            </div>
+            <div class="mt-4 d-flex justify-content-center">
+                <img src="./img/bootstrap.png" width="200" alt="logo">
+            </div>
+            <div class="container ">
+            <h1 class="text-center" style="font-size: 4rem;">Build fast, responsive sites with Bootstrap</h1>
+            <p class="text-center" style="font-size: 24px; color: #807080;">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt
+                grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <span class="p-3 fs-5 border rounded-3 bg-light me-3">$ npm i bootstrap@5 .3 .3  <a href=""><i class="fa-regular fa-clipboard"></i></a></span>
+                <a class="p-3 fs-5 fw-bold border rounded-3 text-white" style="background: #712cf9;" href="#"><i class="fa-solid fa-book-open"></i>   Read the docs</a>
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <span class="pe-2">Currently v5.3.3  . </span>
+                <p class="pe-2"><a  class="text-dark link-offset-1" href="#"> Download</a>  .</p>
+                <span class="pe-2 link-underline-dark"><a class="text-dark" href="#"> All releases</a></span>
+            </div>
+            <div  class="d-flex justify-content-center mt-5">
+                <div class="d-flex p-3 border rounded-3 bg-light">
+                <img src="./img/1.jpeg" width="140" alt="stock">
+                <div class="ms-2 fs-6">
+                    <p>Get 10 Free Images From Adobe Stock.</p>
+                    <p>start Now.</p>
+                    <p>ads via Carbon</p>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
+<footer class="">
+
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
